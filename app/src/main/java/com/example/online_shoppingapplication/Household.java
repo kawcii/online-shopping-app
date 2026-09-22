@@ -4,6 +4,7 @@ package com.example.online_shoppingapplication;
  * Household.java
  * Covers: Household & Cleaning Supplies, Personal Care & Toiletries,
  *         Kitchenware & Home Linens, Stationery & Office Supplies
+ *         Demonstrates: Inheritance, Method Overriding
  */
 public class Household extends Product {
 
@@ -25,7 +26,7 @@ public class Household extends Product {
 
     @Override
     public void displayProduct() {
-        System.out.println("Household [" + category + "]: " + productName
-                + " - K" + price + (fragile ? " (Fragile)" : ""));
+        System.out.println("Household [" + getCategory() + "]: " + getProductName()
+                + " - K" + getPrice() + (fragile ? " (Fragile)" : ""));
     }
 }

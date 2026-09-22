@@ -3,6 +3,7 @@ package com.example.online_shoppingapplication;
 /**
  * Electronics.java
  * Covers: Electronics & Audio, Hardware & Electrical
+ * Demonstrates: Inheritance, Method Overriding
  */
 public class Electronics extends Product {
 
@@ -24,7 +25,7 @@ public class Electronics extends Product {
 
     @Override
     public void displayProduct() {
-        System.out.println("Electronics [" + category + "]: " + productName
-                + " - K" + price + " (Warranty: " + warrantyMonths + " months)");
+        System.out.println("Electronics [" + getCategory() + "]: " + getProductName()
+                + " - K" + getPrice() + " (Warranty: " + warrantyMonths + " months)");
     }
 }

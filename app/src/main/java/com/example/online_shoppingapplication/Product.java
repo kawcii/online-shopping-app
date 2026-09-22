@@ -8,9 +8,9 @@ package com.example.online_shoppingapplication;
  */
 public class Product {
 
-    protected String productName;
-    protected double price;
-    protected String category; // e.g. "Beverages", "Fresh Produce", "Stationery" - exact marketing category
+    private String productName;
+    private double price;
+    private String category; // e.g. "Beverages", "Fresh Produce", "Stationery" - exact marketing category
 
     public Product(String productName, double price, String category) {
         this.productName = productName;

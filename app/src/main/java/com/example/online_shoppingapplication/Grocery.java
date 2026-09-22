@@ -3,6 +3,7 @@ package com.example.online_shoppingapplication;
 /**
  * Grocery.java
  * Covers: Packaged Groceries & Pantry, Beverages & Alcohol, Fresh & Perishable Foods
+ * Demonstrates: Inheritance, Method Overriding
  */
 public class Grocery extends Product {
 
@@ -24,7 +25,7 @@ public class Grocery extends Product {
 
     @Override
     public void displayProduct() {
-        System.out.println("Grocery [" + category + "]: " + productName
-                + " - K" + price + " (" + unitType + ")");
+        System.out.println("Grocery [" + getCategory() + "]: " + getProductName()
+                + " - K" + getPrice() + " (" + unitType + ")");
     }
 }

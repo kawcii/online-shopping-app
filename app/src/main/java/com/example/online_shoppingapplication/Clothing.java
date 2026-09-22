@@ -3,6 +3,7 @@ package com.example.online_shoppingapplication;
 /**
  * Clothing.java
  * Covers: Apparel & Footwear
+ * Demonstrates: Inheritance, Method Overriding
  */
 public class Clothing extends Product {
 
@@ -24,6 +25,6 @@ public class Clothing extends Product {
 
     @Override
     public void displayProduct() {
-        System.out.println("Clothing: " + productName + " - K" + price + " (Size: " + size + ")");
+        System.out.println("Clothing: " + getProductName() + " - K" + getPrice() + " (Size: " + size + ")");
     }
 }
