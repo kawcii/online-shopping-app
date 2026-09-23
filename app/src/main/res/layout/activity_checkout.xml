@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bigv_cream"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Checkout Title -->
+        <TextView
+            android:id="@+id/txtCheckoutTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CHECKOUT"
+            android:textColor="@color/bigv_dark_text"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Customer Name -->
+        <TextView
+            android:id="@+id/lblCustomerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Customer Name"
+            android:textColor="@color/bigv_dark_text"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtCustomerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your full name"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Telephone -->
+        <TextView
+            android:id="@+id/lblCustomerPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Telephone Number"
+            android:textColor="@color/bigv_dark_text"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtCustomerPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter telephone number"
+            android:inputType="phone"
+            android:padding="12dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Delivery Location -->
+        <TextView
+            android:id="@+id/lblDeliveryLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delivery Location"
+            android:textColor="@color/bigv_dark_text"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtDeliveryLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter delivery location"
+            android:inputType="textPostalAddress"
+            android:padding="12dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Order Summary -->
+        <TextView
+            android:id="@+id/txtOrderSummaryTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ORDER SUMMARY"
+            android:textColor="@color/bigv_brown"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/txtCheckoutOrderSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rice&#10;Quantity: 1&#10;Price: K25.00"
+            android:textColor="@color/bigv_dark_text"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:padding="12dp"
+            android:background="@color/bigv_white" />
+
+        <!-- Total -->
+        <TextView
+            android:id="@+id/txtCheckoutTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TOTAL: K25.00"
+            android:textColor="@color/bigv_brown"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Validation Error -->
+        <TextView
+            android:id="@+id/txtCheckoutError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please complete all required fields."
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Prototype Disclaimer -->
+        <TextView
+            android:id="@+id/txtPrototypeDisclaimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prototype only: No real financial transactions are processed through this application."
+            android:textColor="@color/bigv_dark_text"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Place Order Button -->
+        <Button
+            android:id="@+id/btnPlaceOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PLACE ORDER"
+            android:textColor="@color/bigv_dark_text"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/bigv_yellow"
+            android:layout_marginBottom="20dp" />
+
+    </LinearLayout>
+
+</ScrollView>

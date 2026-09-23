@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bigv_cream"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <!-- Product Image -->
+        <ImageView
+            android:id="@+id/imgProductDetail"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/product_rice"
+            android:contentDescription="Product image" />
+
+        <!-- Product Name -->
+        <TextView
+            android:id="@+id/txtProductDetailName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Rice"
+            android:textColor="@color/bigv_dark_text"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <!-- Product Price -->
+        <TextView
+            android:id="@+id/txtProductDetailPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Price: K25.00"
+            android:textColor="@color/bigv_brown"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Product Category -->
+        <TextView
+            android:id="@+id/txtProductDetailCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Category: Grocery"
+            android:textColor="@color/bigv_dark_text"
+            android:textSize="16sp" />
+
+        <!-- Product Description -->
+        <TextView
+            android:id="@+id/txtProductDetailDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Quality grocery rice suitable for everyday meals."
+            android:textColor="@color/bigv_dark_text"
+            android:textSize="17sp"
+            android:lineSpacingExtra="4dp"
+            android:gravity="center" />
+
+        <!-- Add to Cart Button -->
+        <Button
+            android:id="@+id/btnAddToCart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="20dp"
+            android:text="ADD TO CART"
+            android:textColor="@color/bigv_dark_text"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:backgroundTint="@color/bigv_yellow" />
+
+    </LinearLayout>
+
+</ScrollView>

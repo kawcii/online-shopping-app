@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bigv_cream"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Cart Title -->
+        <TextView
+            android:id="@+id/txtCartTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SHOPPING CART"
+            android:textColor="@color/bigv_dark_text"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Empty Cart Message -->
+        <TextView
+            android:id="@+id/txtEmptyCart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your shopping cart is empty."
+            android:textColor="@color/bigv_dark_text"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:padding="20dp"
+            android:visibility="gone" />
+
+        <!-- Cart Product -->
+        <LinearLayout
+            android:id="@+id/cartProductItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:background="@color/bigv_white"
+            android:layout_marginBottom="20dp">
+
+            <!-- Product Image -->
+            <ImageView
+                android:id="@+id/imgCartProduct"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/product_rice"
+                android:contentDescription="Cart product image" />
+
+            <!-- Product Information -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="16dp">
+
+                <TextView
+                    android:id="@+id/txtCartProductName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rice"
+                    android:textColor="@color/bigv_dark_text"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtCartProductPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Price: K25.00"
+                    android:textColor="@color/bigv_brown"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txtCartQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Quantity: 1"
+                    android:textColor="@color/bigv_dark_text"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txtCartSubtotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Subtotal: K25.00"
+                    android:textColor="@color/bigv_dark_text"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Overall Total -->
+        <TextView
+            android:id="@+id/txtCartTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TOTAL: K25.00"
+            android:textColor="@color/bigv_brown"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Checkout Button -->
+        <Button
+            android:id="@+id/btnCheckout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CHECKOUT"
+            android:textColor="@color/bigv_dark_text"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/bigv_yellow"
+            android:layout_marginBottom="20dp" />
+
+    </LinearLayout>
+
+</ScrollView>

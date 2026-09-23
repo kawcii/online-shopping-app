@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bigv_cream"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Page Title -->
+        <TextView
+            android:id="@+id/txtCategoriesTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="SHOP BY CATEGORY"
+            android:textColor="@color/bigv_brown"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <!-- Grocery -->
+        <LinearLayout
+            android:id="@+id/categoryGrocery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@color/bigv_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/imgCategoryGrocery"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="Grocery category"
+                android:scaleType="centerCrop"
+                android:src="@drawable/category_grocery" />
+
+            <TextView
+                android:id="@+id/txtCategoryGrocery"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:text="GROCERY"
+                android:textColor="@color/bigv_brown"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Electronics -->
+        <LinearLayout
+            android:id="@+id/categoryElectronics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@color/bigv_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/imgCategoryElectronics"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="Electronics category"
+                android:scaleType="centerCrop"
+                android:src="@drawable/category_electronics" />
+
+            <TextView
+                android:id="@+id/txtCategoryElectronics"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:text="ELECTRONICS"
+                android:textColor="@color/bigv_brown"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Clothing -->
+        <LinearLayout
+            android:id="@+id/categoryClothing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@color/bigv_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/imgCategoryClothing"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="Clothing category"
+                android:scaleType="centerCrop"
+                android:src="@drawable/category_clothing" />
+
+            <TextView
+                android:id="@+id/txtCategoryClothing"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:text="CLOTHING"
+                android:textColor="@color/bigv_brown"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Household -->
+        <LinearLayout
+            android:id="@+id/categoryHousehold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bigv_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/imgCategoryHousehold"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="Household category"
+                android:scaleType="centerCrop"
+                android:src="@drawable/category_household" />
+
+            <TextView
+                android:id="@+id/txtCategoryHousehold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:text="HOUSEHOLD"
+                android:textColor="@color/bigv_brown"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
