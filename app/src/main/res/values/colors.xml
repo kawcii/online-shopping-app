@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+
+    <!-- BIG V Main Colours -->
+    <color name="bigv_yellow">#FFC107</color>
+    <color name="bigv_brown">#6B3E26</color>
+    <color name="bigv_cream">#FFF8E7</color>
+
+    <!-- Supporting Colours -->
+    <color name="bigv_dark_text">#3E2723</color>
+    <color name="bigv_light_yellow">#FFF3CD</color>
+    <color name="bigv_white">#FFFFFF</color>
+
 </resources>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bigv_cream"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Page Title -->
+        <TextView
+            android:id="@+id/txtProductListTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="OUR PRODUCTS"
+            android:textColor="@color/bigv_brown"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <!-- Product 1 -->
+        <LinearLayout
+            android:id="@+id/productItem1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@color/bigv_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/imgProduct1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="Product image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/product_rice" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtProductName1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rice"
+                    android:textColor="@color/bigv_brown"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtProductPrice1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Price: K25.00"
+                    android:textColor="@color/bigv_dark_text"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txtProductCategory1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Category: Grocery"
+                    android:textColor="@color/bigv_dark_text"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Product 2 -->
+        <LinearLayout
+            android:id="@+id/productItem2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@color/bigv_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/imgProduct2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="Product image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/product_chicken" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtProductName2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chicken"
+                    android:textColor="@color/bigv_brown"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtProductPrice2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Price: K35.00"
+                    android:textColor="@color/bigv_dark_text"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txtProductCategory2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Category: Grocery"
+                    android:textColor="@color/bigv_dark_text"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Product 3 -->
+        <LinearLayout
+            android:id="@+id/productItem3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@color/bigv_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/imgProduct3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="Product image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/product_speaker" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtProductName3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bluetooth Speaker"
+                    android:textColor="@color/bigv_brown"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtProductPrice3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Price: K120.00"
+                    android:textColor="@color/bigv_dark_text"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txtProductCategory3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Category: Electronics"
+                    android:textColor="@color/bigv_dark_text"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Empty State Message -->
+        <TextView
+            android:id="@+id/txtNoProducts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:text="No products available."
+            android:textColor="@color/bigv_dark_text"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</ScrollView>

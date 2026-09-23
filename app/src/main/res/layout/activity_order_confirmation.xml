@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bigv_cream"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <!-- Confirmation Title -->
+        <TextView
+            android:id="@+id/txtConfirmationTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="ORDER CONFIRMED"
+            android:textColor="@color/bigv_brown"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Confirmation Message -->
+        <TextView
+            android:id="@+id/txtConfirmationMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Thank you for shopping with BIG V Supermarket!"
+            android:textColor="@color/bigv_dark_text"
+            android:textSize="18sp" />
+
+        <!-- Order Status -->
+        <TextView
+            android:id="@+id/txtOrderStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Your order has been successfully placed."
+            android:textColor="@color/bigv_dark_text"
+            android:textSize="16sp" />
+
+        <!-- Order Summary -->
+        <TextView
+            android:id="@+id/txtConfirmationSummaryTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="ORDER SUMMARY"
+            android:textColor="@color/bigv_brown"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtConfirmationOrderSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@color/bigv_white"
+            android:padding="16dp"
+            android:text="Rice&#10;Quantity: 1&#10;Price: K25.00"
+            android:textColor="@color/bigv_dark_text"
+            android:textSize="16sp" />
+
+        <!-- Total -->
+        <TextView
+            android:id="@+id/txtConfirmationTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="TOTAL: K25.00"
+            android:textColor="@color/bigv_brown"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Back to Home -->
+        <Button
+            android:id="@+id/btnBackToHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/bigv_yellow"
+            android:text="BACK TO HOME"
+            android:textColor="@color/bigv_dark_text"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>

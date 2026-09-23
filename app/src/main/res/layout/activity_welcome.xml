@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bigv_cream"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <!-- BIG V Logo -->
+        <ImageView
+            android:id="@+id/imgWelcomeLogo"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_marginTop="40dp"
+            android:contentDescription="BIG V Supermarket Logo"
+            android:scaleType="fitCenter"
+            android:src="@drawable/big_v_logo" />
+
+        <!-- Store Name -->
+        <TextView
+            android:id="@+id/txtWelcomeStoreName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="BIG V SUPERMARKET"
+            android:textColor="@color/bigv_brown"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <!-- Welcome Message -->
+        <TextView
+            android:id="@+id/txtWelcomeMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Welcome to BIG V!"
+            android:textColor="@color/bigv_dark_text"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/txtWelcomeDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Shop groceries, electronics, clothing and household items all in one place."
+            android:textColor="@color/bigv_dark_text"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp" />
+
+        <!-- Enter Shop Button -->
+        <Button
+            android:id="@+id/btnEnterShop"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="40dp"
+            android:backgroundTint="@color/bigv_yellow"
+            android:text="ENTER SHOP"
+            android:textColor="@color/bigv_brown"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>
