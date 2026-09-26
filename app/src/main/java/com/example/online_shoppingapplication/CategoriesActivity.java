@@ -21,7 +21,7 @@ public class CategoriesActivity extends AppCompatActivity {
 
         categoryGrocery.setOnClickListener(v -> openProductList("Grocery"));
         categoryElectronics.setOnClickListener(v -> openProductList("Electronics"));
-        categoryClothing.setOnClickListener(v -> openProductList("Clothing"));
+        categoryClothing.setOnClickListener(v -> openProductList("Apparel & Footwear"));
         categoryHousehold.setOnClickListener(v -> openProductList("Household"));
     }
 
