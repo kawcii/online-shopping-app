@@ -1,6 +1,8 @@
 package com.example.online_shoppingapplication;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -9,15 +11,12 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 public class ProductListActivity extends AppCompatActivity {
 
     private TextView txtProductListTitle, txtNoProducts;
-    private LinearLayout productItem1, productItem2, productItem3;
-    private ImageView imgProduct1, imgProduct2, imgProduct3;
-    private TextView txtProductName1, txtProductPrice1, txtProductCategory1;
-    private TextView txtProductName2, txtProductPrice2, txtProductCategory2;
-    private TextView txtProductName3, txtProductPrice3, txtProductCategory3;
+    private LinearLayout productListContainer;
 
     private List<Product> catalog;
     private List<Product> filteredProducts;
@@ -36,7 +35,7 @@ public class ProductListActivity extends AppCompatActivity {
         }
 
         if (categoryFilter != null && !categoryFilter.isEmpty()) {
-            txtProductListTitle.setText(categoryFilter.toUpperCase() + " PRODUCTS");
+            txtProductListTitle.setText(categoryFilter.toUpperCase(Locale.getDefault()) + " PRODUCTS");
             filteredProducts = new ArrayList<>();
             for (Product p : catalog) {
                 if (p.getCategory().equalsIgnoreCase(categoryFilter)) {
@@ -54,24 +53,7 @@ public class ProductListActivity extends AppCompatActivity {
     private void bindViews() {
         txtProductListTitle = findViewById(R.id.txtProductListTitle);
         txtNoProducts = findViewById(R.id.txtNoProducts);
-
-        productItem1 = findViewById(R.id.productItem1);
-        imgProduct1 = findViewById(R.id.imgProduct1);
-        txtProductName1 = findViewById(R.id.txtProductName1);
-        txtProductPrice1 = findViewById(R.id.txtProductPrice1);
-        txtProductCategory1 = findViewById(R.id.txtProductCategory1);
-
-        productItem2 = findViewById(R.id.productItem2);
-        imgProduct2 = findViewById(R.id.imgProduct2);
-        txtProductName2 = findViewById(R.id.txtProductName2);
-        txtProductPrice2 = findViewById(R.id.txtProductPrice2);
-        txtProductCategory2 = findViewById(R.id.txtProductCategory2);
-
-        productItem3 = findViewById(R.id.productItem3);
-        imgProduct3 = findViewById(R.id.imgProduct3);
-        txtProductName3 = findViewById(R.id.txtProductName3);
-        txtProductPrice3 = findViewById(R.id.txtProductPrice3);
-        txtProductCategory3 = findViewById(R.id.txtProductCategory3);
+        productListContainer = findViewById(R.id.productListContainer);
     }
 
     private void buildCatalog() {
@@ -91,44 +73,90 @@ public class ProductListActivity extends AppCompatActivity {
     }
 
     private void displayProducts() {
-        productItem1.setVisibility(View.GONE);
-        productItem2.setVisibility(View.GONE);
-        productItem3.setVisibility(View.GONE);
-        txtNoProducts.setVisibility(View.GONE);
+        productListContainer.removeAllViews();
 
         if (filteredProducts.isEmpty()) {
             txtNoProducts.setVisibility(View.VISIBLE);
             return;
         }
 
-        if (filteredProducts.size() > 0) {
-            Product p1 = filteredProducts.get(0);
-            productItem1.setVisibility(View.VISIBLE);
-            txtProductName1.setText(p1.getProductName());
-            txtProductPrice1.setText("Price: K" + String.format("%.2f", p1.getPrice()));
-            txtProductCategory1.setText("Category: " + p1.getCategory());
-            imgProduct1.setImageResource(getImageForProduct(p1.getProductName()));
-            productItem1.setOnClickListener(v -> addProductToCart(p1));
-        }
+        txtNoProducts.setVisibility(View.GONE);
+        float density = getResources().getDisplayMetrics().density;
 
-        if (filteredProducts.size() > 1) {
-            Product p2 = filteredProducts.get(1);
-            productItem2.setVisibility(View.VISIBLE);
-            txtProductName2.setText(p2.getProductName());
-            txtProductPrice2.setText("Price: K" + String.format("%.2f", p2.getPrice()));
-            txtProductCategory2.setText("Category: " + p2.getCategory());
-            imgProduct2.setImageResource(getImageForProduct(p2.getProductName()));
-            productItem2.setOnClickListener(v -> addProductToCart(p2));
-        }
+        for (Product p : filteredProducts) {
+            LinearLayout itemLayout = new LinearLayout(this);
+            LinearLayout.LayoutParams itemParams = new LinearLayout.LayoutParams(
+                    LinearLayout.LayoutParams.MATCH_PARENT,
+                    LinearLayout.LayoutParams.WRAP_CONTENT
+            );
+            itemParams.setMargins(0, 0, 0, (int) (16 * density));
+            itemLayout.setLayoutParams(itemParams);
+            itemLayout.setOrientation(LinearLayout.HORIZONTAL);
+            itemLayout.setGravity(Gravity.CENTER_VERTICAL);
+            itemLayout.setPadding(
+                    (int) (12 * density),
+                    (int) (12 * density),
+                    (int) (12 * density),
+                    (int) (12 * density)
+            );
+            itemLayout.setBackgroundColor(getResources().getColor(R.color.bigv_white, null));
 
-        if (filteredProducts.size() > 2) {
-            Product p3 = filteredProducts.get(2);
-            productItem3.setVisibility(View.VISIBLE);
-            txtProductName3.setText(p3.getProductName());
-            txtProductPrice3.setText("Price: K" + String.format("%.2f", p3.getPrice()));
-            txtProductCategory3.setText("Category: " + p3.getCategory());
-            imgProduct3.setImageResource(getImageForProduct(p3.getProductName()));
-            productItem3.setOnClickListener(v -> addProductToCart(p3));
+            ImageView imgView = new ImageView(this);
+            int imgSize = (int) (100 * density);
+            LinearLayout.LayoutParams imgParams = new LinearLayout.LayoutParams(imgSize, imgSize);
+            imgView.setLayoutParams(imgParams);
+            imgView.setScaleType(ImageView.ScaleType.CENTER_CROP);
+            imgView.setImageResource(getImageForProduct(p.getProductName()));
+            imgView.setContentDescription("Product image");
+
+            LinearLayout textLayout = new LinearLayout(this);
+            LinearLayout.LayoutParams textParams = new LinearLayout.LayoutParams(
+                    0,
+                    LinearLayout.LayoutParams.WRAP_CONTENT,
+                    1f
+            );
+            textParams.setMargins((int) (16 * density), 0, 0, 0);
+            textLayout.setLayoutParams(textParams);
+            textLayout.setOrientation(LinearLayout.VERTICAL);
+
+            TextView nameView = new TextView(this);
+            nameView.setText(p.getProductName());
+            nameView.setTextColor(getResources().getColor(R.color.bigv_brown, null));
+            nameView.setTextSize(18f);
+            nameView.setTypeface(null, Typeface.BOLD);
+
+            TextView priceView = new TextView(this);
+            priceView.setText("Price: K" + String.format(Locale.getDefault(), "%.2f", p.getPrice()));
+            priceView.setTextColor(getResources().getColor(R.color.bigv_dark_text, null));
+            priceView.setTextSize(16f);
+            LinearLayout.LayoutParams priceParams = new LinearLayout.LayoutParams(
+                    LinearLayout.LayoutParams.MATCH_PARENT,
+                    LinearLayout.LayoutParams.WRAP_CONTENT
+            );
+            priceParams.setMargins(0, (int) (6 * density), 0, 0);
+            priceView.setLayoutParams(priceParams);
+
+            TextView catView = new TextView(this);
+            catView.setText("Category: " + p.getCategory());
+            catView.setTextColor(getResources().getColor(R.color.bigv_dark_text, null));
+            catView.setTextSize(14f);
+            LinearLayout.LayoutParams catParams = new LinearLayout.LayoutParams(
+                    LinearLayout.LayoutParams.MATCH_PARENT,
+                    LinearLayout.LayoutParams.WRAP_CONTENT
+            );
+            catParams.setMargins(0, (int) (4 * density), 0, 0);
+            catView.setLayoutParams(catParams);
+
+            textLayout.addView(nameView);
+            textLayout.addView(priceView);
+            textLayout.addView(catView);
+
+            itemLayout.addView(imgView);
+            itemLayout.addView(textLayout);
+
+            itemLayout.setOnClickListener(v -> addProductToCart(p));
+
+            productListContainer.addView(itemLayout);
         }
     }
 
