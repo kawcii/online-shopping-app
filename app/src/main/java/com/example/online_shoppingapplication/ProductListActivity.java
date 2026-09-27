@@ -85,6 +85,10 @@ public class ProductListActivity extends AppCompatActivity {
         catalog.add(new Clothing("Thongs", 18.00, "41"));
         catalog.add(new Household("Toilet Tissue", 12.00, "Household", false));
         catalog.add(new Grocery("Tomato", 11.50, "Grocery", "kg"));
+
+        // Latest added product images
+        catalog.add(new Clothing("Black Bag", 75.00, "One Size"));
+        catalog.add(new Clothing("Blue Jeans", 65.00, "32"));
     }
 
     private void displayProducts() {
@@ -205,6 +209,9 @@ public class ProductListActivity extends AppCompatActivity {
             case "Thongs": return R.drawable.product_thongs;
             case "Toilet Tissue": return R.drawable.product_toilet_tissue;
             case "Tomato": return R.drawable.product_tomato;
+            // Latest added product images
+            case "Black Bag": return R.drawable.product_black_bag;
+            case "Blue Jeans": return R.drawable.product_blue_jeans;
             default: return R.drawable.product_rice;
         }
     }
