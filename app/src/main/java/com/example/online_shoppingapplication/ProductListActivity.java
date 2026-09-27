@@ -58,7 +58,7 @@ public class ProductListActivity extends AppCompatActivity {
 
     private void buildCatalog() {
         catalog = new ArrayList<>();
-        // 2 per category
+        // Existing products
         catalog.add(new Grocery("Rice", 25.00, "Grocery", "bag"));
         catalog.add(new Grocery("Chicken", 35.00, "Grocery", "kg"));
 
@@ -70,6 +70,21 @@ public class ProductListActivity extends AppCompatActivity {
 
         catalog.add(new Clothing("Shoes", 85.00, "42"));
         catalog.add(new Clothing("Backpack", 65.00, "L"));
+
+        // New products added from drawable resources
+        catalog.add(new Grocery("Apple", 12.50, "Grocery", "kg"));
+        catalog.add(new Household("Bath Towel", 28.00, "Household", false));
+        catalog.add(new Household("Bleach", 15.50, "Household", false));
+        catalog.add(new Grocery("Capsicum", 14.00, "Grocery", "kg"));
+        catalog.add(new Grocery("Instant Noodles", 2.50, "Grocery", "pack"));
+        catalog.add(new Grocery("Large Tin Fish", 8.50, "Grocery", "tin"));
+        catalog.add(new Grocery("White Rice", 22.50, "Grocery", "bag"));
+        catalog.add(new Grocery("Orange", 10.00, "Grocery", "kg"));
+        catalog.add(new Grocery("Prima Sausage", 12.50, "Grocery", "pack"));
+        catalog.add(new Grocery("Small Tin Fish", 4.50, "Grocery", "tin"));
+        catalog.add(new Clothing("Thongs", 18.00, "41"));
+        catalog.add(new Household("Toilet Tissue", 12.00, "Household", false));
+        catalog.add(new Grocery("Tomato", 11.50, "Grocery", "kg"));
     }
 
     private void displayProducts() {
@@ -167,6 +182,7 @@ public class ProductListActivity extends AppCompatActivity {
 
     private int getImageForProduct(String productName) {
         switch (productName) {
+            // Existing cases
             case "Rice": return R.drawable.product_rice;
             case "Chicken": return R.drawable.product_chicken;
             case "Bluetooth Speaker": return R.drawable.product_speaker;
@@ -175,6 +191,20 @@ public class ProductListActivity extends AppCompatActivity {
             case "Storage Bucket": return R.drawable.product_storage_bucket;
             case "Shoes": return R.drawable.product_shoes;
             case "Backpack": return R.drawable.product_backpack;
+            // New cases added for unreferenced product images
+            case "Apple": return R.drawable.product_apple;
+            case "Bath Towel": return R.drawable.product_bath_towel;
+            case "Bleach": return R.drawable.product_bleach;
+            case "Capsicum": return R.drawable.product_capsicum;
+            case "Instant Noodles": return R.drawable.product_instant_noodles;
+            case "Large Tin Fish": return R.drawable.product_large_tuna_tinfish;
+            case "White Rice": return R.drawable.product_normal_rice;
+            case "Orange": return R.drawable.product_orange;
+            case "Prima Sausage": return R.drawable.product_prima_sausage;
+            case "Small Tin Fish": return R.drawable.product_small_tuna_tinfish;
+            case "Thongs": return R.drawable.product_thongs;
+            case "Toilet Tissue": return R.drawable.product_toilet_tissue;
+            case "Tomato": return R.drawable.product_tomato;
             default: return R.drawable.product_rice;
         }
     }
