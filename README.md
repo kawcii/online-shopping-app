@@ -80,6 +80,3 @@ The application was developed using Java, Android SDK, Jetpack, XML layouts, and
 [Steps to clone, open, and run the project]
 
 ## Screenshots
-
-### 8. Order Confirmation Screen
-![Order Confirmation Screen](screenshots/08_Order_Confirmation.png)
