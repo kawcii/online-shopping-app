@@ -48,18 +48,19 @@
             android:gravity="center" />
 
         <!-- Description -->
+
+        <!-- Enter Shop Button -->
         <TextView
             android:id="@+id/txtWelcomeDescription"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="55dp"
             android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp"
             android:text="Shop groceries, electronics, clothing and household items all in one place."
             android:textColor="@color/bigv_dark_text"
-            android:textSize="16sp"
-            android:gravity="center"
-            android:lineSpacingExtra="4dp" />
+            android:textSize="16sp" />
 
-        <!-- Enter Shop Button -->
         <Button
             android:id="@+id/btnEnterShop"
             android:layout_width="match_parent"
