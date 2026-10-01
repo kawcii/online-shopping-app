@@ -59,36 +59,36 @@ public class ProductListActivity extends AppCompatActivity {
     private void buildCatalog() {
         catalog = new ArrayList<>();
         // Existing products
-        catalog.add(new Grocery("Rice", 25.00, "Grocery", "bag"));
-        catalog.add(new Grocery("Chicken", 35.00, "Grocery", "kg"));
+        catalog.add(new Grocery("Trukai Jasmine Rice (10kg bag)", 54.00, "Grocery", "bag"));
+        catalog.add(new Grocery("Chicken Breast (1kg tray)", 18.50, "Grocery", "kg"));
 
         catalog.add(new Electronics("Bluetooth Speaker", 120.00, "Electronics", 12));
-        catalog.add(new Electronics("Extension Cable", 45.00, "Electronics", 6));
+        catalog.add(new Electronics("Extension Cord", 55.00, "Electronics", 6));
 
-        catalog.add(new Household("Laundry Powder", 18.00, "Household", false));
-        catalog.add(new Household("Storage Bucket", 22.00, "Household", true));
+        catalog.add(new Household("Cold Powder (1kg)", 16.00, "Household", false));
+        catalog.add(new Household("Plastic Bucket", 22.00, "Household", true));
 
-        catalog.add(new Clothing("Shoes", 85.00, "42"));
-        catalog.add(new Clothing("Backpack", 65.00, "L"));
+        catalog.add(new Clothing("Puma Running Shoes", 110.00, "42"));
+        catalog.add(new Clothing("Peak Sport Backpack", 55.00, "L"));
 
         // New products added from drawable resources
-        catalog.add(new Grocery("Apple", 12.50, "Grocery", "kg"));
-        catalog.add(new Household("Bath Towel", 28.00, "Household", false));
-        catalog.add(new Household("Bleach", 15.50, "Household", false));
-        catalog.add(new Grocery("Capsicum", 14.00, "Grocery", "kg"));
-        catalog.add(new Grocery("Instant Noodles", 2.50, "Grocery", "pack"));
-        catalog.add(new Grocery("Large Tin Fish", 8.50, "Grocery", "tin"));
-        catalog.add(new Grocery("White Rice", 22.50, "Grocery", "bag"));
-        catalog.add(new Grocery("Orange", 10.00, "Grocery", "kg"));
-        catalog.add(new Grocery("Prima Sausage", 12.50, "Grocery", "pack"));
-        catalog.add(new Grocery("Small Tin Fish", 4.50, "Grocery", "tin"));
-        catalog.add(new Clothing("Thongs", 18.00, "41"));
-        catalog.add(new Household("Toilet Tissue", 12.00, "Household", false));
-        catalog.add(new Grocery("Tomato", 11.50, "Grocery", "kg"));
+        catalog.add(new Grocery("Apple (1kg)", 10.00, "Grocery", "kg"));
+        catalog.add(new Household("Bath Towel", 22.00, "Household", false));
+        catalog.add(new Household("Dazzle Bleach (200ml)", 3.50, "Household", false));
+        catalog.add(new Grocery("Capsicum (1kg)", 8.00, "Grocery", "kg"));
+        catalog.add(new Grocery("Maggie Instant Noodles (85g)", 2.50, "Grocery", "pack"));
+        catalog.add(new Grocery("Ocean blue Tuna/oil (425g)", 7.50, "Grocery", "tin"));
+        catalog.add(new Grocery("Flame Jasmine Rice (500g)", 5.00, "Grocery", "bag"));
+        catalog.add(new Grocery("Orange (1kg)", 10.00, "Grocery", "kg"));
+        catalog.add(new Grocery("Prima Sausage (500g)", 12.50, "Grocery", "pack"));
+        catalog.add(new Grocery("Ocean Blue Tuna/oil (180g)", 3.50, "Grocery", "tin"));
+        catalog.add(new Clothing("Relaxo Thongs", 18.00, "13"));
+        catalog.add(new Household("Value Toilet-Tissue (6 rolls)", 12.00, "Household", false));
+        catalog.add(new Grocery("Tomato (1kg)", 7.50, "Grocery", "kg"));
 
         // Latest added product images
-        catalog.add(new Clothing("Black Bag", 75.00, "One Size"));
-        catalog.add(new Clothing("Blue Jeans", 65.00, "32"));
+        catalog.add(new Clothing("Peak Sport Black Bag", 95.00, "One Size"));
+        catalog.add(new Clothing("MA-Blue Jeans", 45.00, "32"));
     }
 
     private void displayProducts() {
@@ -186,32 +186,29 @@ public class ProductListActivity extends AppCompatActivity {
 
     private int getImageForProduct(String productName) {
         switch (productName) {
-            // Existing cases
-            case "Rice": return R.drawable.product_rice;
-            case "Chicken": return R.drawable.product_chicken;
+            case "Trukai Jasmine Rice (10kg bag)": return R.drawable.product_rice;
+            case "Chicken Breast (1kg tray)": return R.drawable.product_chicken;
             case "Bluetooth Speaker": return R.drawable.product_speaker;
-            case "Extension Cable": return R.drawable.product_extension_cable;
-            case "Laundry Powder": return R.drawable.product_laundry_powder;
-            case "Storage Bucket": return R.drawable.product_storage_bucket;
-            case "Shoes": return R.drawable.product_shoes;
-            case "Backpack": return R.drawable.product_backpack;
-            // New cases added for unreferenced product images
-            case "Apple": return R.drawable.product_apple;
+            case "Extension Cord": return R.drawable.product_extension_cable;
+            case "Cold Powder (1kg)": return R.drawable.product_laundry_powder;
+            case "Plastic Bucket": return R.drawable.product_storage_bucket;
+            case "Puma Running Shoes": return R.drawable.product_shoes;
+            case "Peak Sport Backpack": return R.drawable.product_backpack;
+            case "Apple (1kg)": return R.drawable.product_apple;
             case "Bath Towel": return R.drawable.product_bath_towel;
-            case "Bleach": return R.drawable.product_bleach;
-            case "Capsicum": return R.drawable.product_capsicum;
-            case "Instant Noodles": return R.drawable.product_instant_noodles;
-            case "Large Tin Fish": return R.drawable.product_large_tuna_tinfish;
-            case "White Rice": return R.drawable.product_normal_rice;
-            case "Orange": return R.drawable.product_orange;
-            case "Prima Sausage": return R.drawable.product_prima_sausage;
-            case "Small Tin Fish": return R.drawable.product_small_tuna_tinfish;
-            case "Thongs": return R.drawable.product_thongs;
-            case "Toilet Tissue": return R.drawable.product_toilet_tissue;
-            case "Tomato": return R.drawable.product_tomato;
-            // Latest added product images
-            case "Black Bag": return R.drawable.product_black_bag;
-            case "Blue Jeans": return R.drawable.product_blue_jeans;
+            case "Dazzle Bleach (200ml)": return R.drawable.product_bleach;
+            case "Capsicum (1kg)": return R.drawable.product_capsicum;
+            case "Maggie Instant Noodles (85g)": return R.drawable.product_instant_noodles;
+            case "Ocean blue Tuna/oil (425g)": return R.drawable.product_large_tuna_tinfish;
+            case "Flame Jasmine Rice (500g)": return R.drawable.product_normal_rice;
+            case "Orange (1kg)": return R.drawable.product_orange;
+            case "Prima Sausage (500g)": return R.drawable.product_prima_sausage;
+            case "Ocean Blue Tuna/oil (180g)": return R.drawable.product_small_tuna_tinfish;
+            case "Relaxo Thongs": return R.drawable.product_thongs;
+            case "Value Toilet-Tissue (6 rolls)": return R.drawable.product_toilet_tissue;
+            case "Tomato (1kg)": return R.drawable.product_tomato;
+            case "Peak Sport Black Bag": return R.drawable.product_black_bag;
+            case "MA-Blue Jeans": return R.drawable.product_blue_jeans;
             default: return R.drawable.product_rice;
         }
     }

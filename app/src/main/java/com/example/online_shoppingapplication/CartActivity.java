@@ -187,29 +187,29 @@ public class CartActivity extends AppCompatActivity {
 
     private int getImageForProduct(String productName) {
         switch (productName) {
-            case "Rice": return R.drawable.product_rice;
-            case "Chicken": return R.drawable.product_chicken;
+            case "Trukai Jasmine Rice (10kg bag)": return R.drawable.product_rice;
+            case "Chicken Breast (1kg tray)": return R.drawable.product_chicken;
             case "Bluetooth Speaker": return R.drawable.product_speaker;
-            case "Extension Cable": return R.drawable.product_extension_cable;
-            case "Laundry Powder": return R.drawable.product_laundry_powder;
-            case "Storage Bucket": return R.drawable.product_storage_bucket;
-            case "Shoes": return R.drawable.product_shoes;
-            case "Backpack": return R.drawable.product_backpack;
-            case "Apple": return R.drawable.product_apple;
+            case "Extension Cord": return R.drawable.product_extension_cable;
+            case "Cold Powder (1kg)": return R.drawable.product_laundry_powder;
+            case "Plastic Bucket": return R.drawable.product_storage_bucket;
+            case "Puma Running Shoes": return R.drawable.product_shoes;
+            case "Peak Sport Backpack": return R.drawable.product_backpack;
+            case "Apple (1kg)": return R.drawable.product_apple;
             case "Bath Towel": return R.drawable.product_bath_towel;
-            case "Bleach": return R.drawable.product_bleach;
-            case "Capsicum": return R.drawable.product_capsicum;
-            case "Instant Noodles": return R.drawable.product_instant_noodles;
-            case "Large Tin Fish": return R.drawable.product_large_tuna_tinfish;
-            case "White Rice": return R.drawable.product_normal_rice;
-            case "Orange": return R.drawable.product_orange;
-            case "Prima Sausage": return R.drawable.product_prima_sausage;
-            case "Small Tin Fish": return R.drawable.product_small_tuna_tinfish;
-            case "Thongs": return R.drawable.product_thongs;
-            case "Toilet Tissue": return R.drawable.product_toilet_tissue;
-            case "Tomato": return R.drawable.product_tomato;
-            case "Black Bag": return R.drawable.product_black_bag;
-            case "Blue Jeans": return R.drawable.product_blue_jeans;
+            case "Dazzle Bleach (200ml)": return R.drawable.product_bleach;
+            case "Capsicum (1kg)": return R.drawable.product_capsicum;
+            case "Maggie Instant Noodles (85g)": return R.drawable.product_instant_noodles;
+            case "Ocean blue Tuna/oil (425g)": return R.drawable.product_large_tuna_tinfish;
+            case "Flame Jasmine Rice (500g)": return R.drawable.product_normal_rice;
+            case "Orange (1kg)": return R.drawable.product_orange;
+            case "Prima Sausage (500g)": return R.drawable.product_prima_sausage;
+            case "Ocean Blue Tuna/oil (180g)": return R.drawable.product_small_tuna_tinfish;
+            case "Relaxo Thongs": return R.drawable.product_thongs;
+            case "Value Toilet-Tissue (6 rolls)": return R.drawable.product_toilet_tissue;
+            case "Tomato (1kg)": return R.drawable.product_tomato;
+            case "Peak Sport Black Bag": return R.drawable.product_black_bag;
+            case "MA-Blue Jeans": return R.drawable.product_blue_jeans;
             default: return R.drawable.product_rice;
         }
     }
