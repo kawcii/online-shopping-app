@@ -14,7 +14,7 @@
 - **Joseph SEETO**
 - Micheal FAN
 - Theodorah ROY
-- Dasha TELIKADA
+- Dasha TELIKADAH
 
 ---
 
