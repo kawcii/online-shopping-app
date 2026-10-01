@@ -81,26 +81,5 @@ The application was developed using Java, Android SDK, Jetpack, XML layouts, and
 
 ## Screenshots
 
-### 1. Welcome Screen
-![Welcome Screen](screenshots/01_Welcome.png)
-
-### 2. Home Screen
-![Home Screen](screenshots/02_Home.png)
-
-### 3. Categories Screen
-![Categories Screen](screenshots/03_Categories.png)
-
-### 4. Product List Screen
-![Product List Screen](screenshots/04_Product_List.png)
-
-### 5. Product Detail Screen
-![Product Detail Screen](screenshots/05_Product_Detail.png)
-
-### 6. Shopping Cart Screen
-![Shopping Cart Screen](screenshots/06_Shopping_Cart.png)
-
-### 7. Checkout Screen
-![Checkout Screen](screenshots/07_Checkout.png)
-
 ### 8. Order Confirmation Screen
 ![Order Confirmation Screen](screenshots/08_Order_Confirmation.png)
