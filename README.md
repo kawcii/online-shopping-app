@@ -252,32 +252,52 @@ If the newly cloned project builds and runs correctly, the repository is ready f
 
 ### Splash Screen
 
-![Splash Screen](screenshots/01_splash.png)
+![Splash Screen](Screenshots/readme_screenshorts/splash_screen.png)
 
-### Home Screen
+### Welcome Screen ("Welcome to BIG V!" + Enter Shop)
 
-![Home Screen](screenshots/02_home.png)
+![Welcome Screen ("Welcome to BIG V!" + Enter Shop)](Screenshots/readme_screenshorts/welcome_screen.png)
 
-### Product Categories Screen
+### Home Screen (View Products / Categories / Shopping Cart buttons)
 
-![Product Categories](screenshots/03_categories.png)
+![Home Screen (View Products / Categories / Shopping Cart buttons)](Screenshots/readme_screenshorts/home_screen.png)
 
-### Product List Screen
+### Categories Screen (Shop by Category)
 
-![Product List](screenshots/04_product_list.png)
+![Categories Screen (Shop by Category)](Screenshots/readme_screenshorts/category_screen.png)
 
-### Product Details Screen
+### Product List — All Products ("OUR PRODUCTS")
 
-![Product Details](screenshots/05_product_details.png)
+![Product List — All Products ("OUR PRODUCTS")](Screenshots/readme_screenshorts/products_list.png)
 
-### Shopping Cart Screen
+### Product List — Grocery (filtered)
 
-![Shopping Cart](screenshots/06_shopping_cart.png)
+![Product List — Grocery (filtered)](Screenshots/readme_screenshorts/grocery_gategory.png)
 
-### Checkout Screen
+### Product List — Electronics (filtered)
 
-![Checkout Screen](screenshots/07_checkout.png)
+![Product List — Electronics (filtered)](Screenshots/readme_screenshorts/electronic_category.png)
 
-### Order Confirmation Screen
+### Product List — Apparel & Footwear (filtered)
 
-![Order Confirmation](screenshots/08_confirmation.png)
+![Product List — Apparel & Footwear (filtered)](Screenshots/readme_screenshorts/clothing_category.png)
+
+### Product List — Household (filtered)
+
+![Product List — Household (filtered)](Screenshots/readme_screenshorts/household_category.png)
+
+### Shopping Cart — empty
+
+![Shopping Cart — empty](Screenshots/readme_screenshorts/shopping_cart.png)
+
+### Shopping Cart — with items
+
+![Shopping Cart — with items](Screenshots/readme_screenshorts/shopping_cart_screen.png)
+
+### Checkout
+
+![Checkout](Screenshots/readme_screenshorts/checkout_screen.png)
+
+### Order Confirmation
+
+![Order Confirmation](Screenshots/readme_screenshorts/order_confirmed.png)
