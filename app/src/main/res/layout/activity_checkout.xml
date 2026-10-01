@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bigv_cream"
@@ -18,18 +17,20 @@
             android:id="@+id/txtCheckoutTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CHECKOUT"
-            android:textColor="@color/bigv_dark_text"
-            android:textSize="24sp"
-            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/montserrat"
             android:gravity="center"
-            android:layout_marginBottom="20dp" />
+            android:text="CHECKOUT"
+            android:textColor="@color/bigv_brown"
+            android:textSize="26sp"
+            android:textStyle="bold" />
 
         <!-- Customer Name -->
         <TextView
             android:id="@+id/lblCustomerName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
             android:text="Customer Name"
             android:textColor="@color/bigv_dark_text"
             android:textSize="16sp"
@@ -39,17 +40,23 @@
             android:id="@+id/edtCustomerName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/bigv_white"
+            android:fontFamily="@font/montserrat"
             android:hint="Enter your full name"
             android:inputType="textPersonName"
-            android:padding="12dp"
-            android:layout_marginTop="6dp"
-            android:layout_marginBottom="16dp" />
+            android:padding="14dp"
+            android:textColor="@color/bigv_dark_text"
+            android:textColorHint="#8D6E63"
+            android:textSize="15sp" />
 
         <!-- Telephone -->
         <TextView
             android:id="@+id/lblCustomerPhone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
             android:text="Telephone Number"
             android:textColor="@color/bigv_dark_text"
             android:textSize="16sp"
@@ -59,17 +66,23 @@
             android:id="@+id/edtCustomerPhone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/bigv_white"
+            android:fontFamily="@font/montserrat"
             android:hint="Enter telephone number"
             android:inputType="phone"
-            android:padding="12dp"
-            android:layout_marginTop="6dp"
-            android:layout_marginBottom="16dp" />
+            android:padding="14dp"
+            android:textColor="@color/bigv_dark_text"
+            android:textColorHint="#8D6E63"
+            android:textSize="15sp" />
 
         <!-- Delivery Location -->
         <TextView
             android:id="@+id/lblDeliveryLocation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
             android:text="Delivery Location"
             android:textColor="@color/bigv_dark_text"
             android:textSize="16sp"
@@ -79,83 +92,122 @@
             android:id="@+id/edtDeliveryLocation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/bigv_white"
+            android:fontFamily="@font/montserrat"
             android:hint="Enter delivery location"
             android:inputType="textPostalAddress"
-            android:padding="12dp"
-            android:layout_marginTop="6dp"
-            android:layout_marginBottom="20dp" />
-
-        <!-- Order Summary -->
-        <TextView
-            android:id="@+id/txtOrderSummaryTitle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="ORDER SUMMARY"
-            android:textColor="@color/bigv_brown"
-            android:textSize="19sp"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:layout_marginBottom="10dp" />
-
-        <TextView
-            android:id="@+id/txtCheckoutOrderSummary"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Rice&#10;Quantity: 1&#10;Price: K25.00"
+            android:padding="14dp"
             android:textColor="@color/bigv_dark_text"
-            android:textSize="16sp"
-            android:gravity="center"
-            android:padding="12dp"
-            android:background="@color/bigv_white" />
+            android:textColorHint="#8D6E63"
+            android:textSize="15sp" />
+
+        <!-- Order Summary Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="@color/bigv_white"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/txtOrderSummaryTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:text="ORDER SUMMARY"
+                    android:textColor="@color/bigv_brown"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtCheckoutOrderSummary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:text="Rice&#10;Quantity: 1&#10;Price: K25.00"
+                    android:textColor="@color/bigv_dark_text"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
 
         <!-- Total -->
         <TextView
             android:id="@+id/txtCheckoutTotal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
             android:text="TOTAL: K25.00"
             android:textColor="@color/bigv_brown"
-            android:textSize="21sp"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="20dp" />
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
         <!-- Validation Error -->
         <TextView
             android:id="@+id/txtCheckoutError"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
             android:text="Please complete all required fields."
             android:textColor="@android:color/holo_red_dark"
             android:textSize="14sp"
-            android:gravity="center"
-            android:visibility="gone"
-            android:layout_marginBottom="12dp" />
+            android:visibility="gone" />
 
-        <!-- Prototype Disclaimer -->
-        <TextView
-            android:id="@+id/txtPrototypeDisclaimer"
+        <!-- Prototype Disclaimer Card -->
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Prototype only: No real financial transactions are processed through this application."
-            android:textColor="@color/bigv_dark_text"
-            android:textSize="14sp"
-            android:gravity="center"
-            android:padding="12dp"
-            android:layout_marginBottom="20dp" />
+            android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="@color/bigv_light_yellow"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:id="@+id/txtPrototypeDisclaimer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:padding="14dp"
+                android:text="Prototype only: No real financial transactions are processed through this application."
+                android:textColor="@color/bigv_dark_text"
+                android:textSize="13sp" />
+
+        </androidx.cardview.widget.CardView>
 
         <!-- Place Order Button -->
         <Button
             android:id="@+id/btnPlaceOrder"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="PLACE ORDER"
-            android:textColor="@color/bigv_dark_text"
-            android:textSize="16sp"
-            android:textStyle="bold"
+            android:layout_height="56dp"
+            android:layout_marginBottom="24dp"
             android:backgroundTint="@color/bigv_yellow"
-            android:layout_marginBottom="20dp" />
+            android:fontFamily="@font/montserrat"
+            app:cornerRadius="8dp"
+            android:text="PLACE ORDER"
+            android:textColor="@color/bigv_brown"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 

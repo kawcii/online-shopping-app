@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Locale;
@@ -94,12 +95,23 @@ public class CartActivity extends AppCompatActivity {
             int qty = info.quantity;
             double subtotal = p.getPrice() * qty;
 
+            CardView cardView = new CardView(this);
+            CardView.LayoutParams cardParams = new CardView.LayoutParams(
+                    CardView.LayoutParams.MATCH_PARENT,
+                    CardView.LayoutParams.WRAP_CONTENT
+            );
+            cardParams.setMargins(0, 0, 0, (int) (12 * density));
+            cardView.setLayoutParams(cardParams);
+            cardView.setRadius(12 * density);
+            cardView.setCardElevation(4 * density);
+            cardView.setUseCompatPadding(true);
+            cardView.setCardBackgroundColor(getResources().getColor(R.color.bigv_white, null));
+
             LinearLayout itemLayout = new LinearLayout(this);
             LinearLayout.LayoutParams itemParams = new LinearLayout.LayoutParams(
                     LinearLayout.LayoutParams.MATCH_PARENT,
                     LinearLayout.LayoutParams.WRAP_CONTENT
             );
-            itemParams.setMargins(0, 0, 0, (int) (16 * density));
             itemLayout.setLayoutParams(itemParams);
             itemLayout.setOrientation(LinearLayout.HORIZONTAL);
             itemLayout.setGravity(Gravity.CENTER_VERTICAL);
@@ -109,7 +121,6 @@ public class CartActivity extends AppCompatActivity {
                     (int) (12 * density),
                     (int) (12 * density)
             );
-            itemLayout.setBackgroundColor(getResources().getColor(R.color.bigv_white, null));
 
             // Product Image
             ImageView imgView = new ImageView(this);
@@ -179,7 +190,8 @@ public class CartActivity extends AppCompatActivity {
             itemLayout.addView(imgView);
             itemLayout.addView(textLayout);
 
-            cartListContainer.addView(itemLayout);
+            cardView.addView(itemLayout);
+            cartListContainer.addView(cardView);
         }
 
         txtCartTotal.setText("TOTAL: K" + String.format(Locale.getDefault(), "%.2f", cart.calculateTotal()));

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bigv_cream"
@@ -19,68 +18,94 @@
             android:id="@+id/imgProductDetail"
             android:layout_width="match_parent"
             android:layout_height="220dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="Product image"
             android:scaleType="fitCenter"
-            android:src="@drawable/product_rice"
-            android:contentDescription="Product image" />
+            android:src="@drawable/product_rice" />
 
-        <!-- Product Name -->
-        <TextView
-            android:id="@+id/txtProductDetailName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Rice"
-            android:textColor="@color/bigv_dark_text"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:gravity="center" />
-
-        <!-- Product Price -->
-        <TextView
-            android:id="@+id/txtProductDetailPrice"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Price: K25.00"
-            android:textColor="@color/bigv_brown"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-        <!-- Product Category -->
-        <TextView
-            android:id="@+id/txtProductDetailCategory"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Category: Grocery"
-            android:textColor="@color/bigv_dark_text"
-            android:textSize="16sp" />
-
-        <!-- Product Description -->
-        <TextView
-            android:id="@+id/txtProductDetailDescription"
+        <!-- Product Details Card -->
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Quality grocery rice suitable for everyday meals."
-            android:textColor="@color/bigv_dark_text"
-            android:textSize="17sp"
-            android:lineSpacingExtra="4dp"
-            android:gravity="center" />
+            app:cardBackgroundColor="@color/bigv_white"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!-- Product Name -->
+                <TextView
+                    android:id="@+id/txtProductDetailName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:text="Rice"
+                    android:textColor="@color/bigv_dark_text"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <!-- Product Price -->
+                <TextView
+                    android:id="@+id/txtProductDetailPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Price: K25.00"
+                    android:textColor="@color/bigv_brown"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <!-- Product Category -->
+                <TextView
+                    android:id="@+id/txtProductDetailCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Category: Grocery"
+                    android:textColor="@color/bigv_dark_text"
+                    android:textSize="16sp" />
+
+                <!-- Product Description -->
+                <TextView
+                    android:id="@+id/txtProductDetailDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:lineSpacingExtra="4dp"
+                    android:text="Quality grocery rice suitable for everyday meals."
+                    android:textColor="@color/bigv_dark_text"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
 
         <!-- Add to Cart Button -->
         <Button
             android:id="@+id/btnAddToCart"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
-            android:layout_marginBottom="20dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="@color/bigv_yellow"
+            android:fontFamily="@font/montserrat"
+            app:cornerRadius="8dp"
             android:text="ADD TO CART"
             android:textColor="@color/bigv_dark_text"
-            android:textStyle="bold"
             android:textSize="16sp"
-            android:backgroundTint="@color/bigv_yellow" />
+            android:textStyle="bold" />
 
     </LinearLayout>
 

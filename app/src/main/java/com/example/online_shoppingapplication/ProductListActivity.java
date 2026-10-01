@@ -9,6 +9,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
@@ -103,12 +104,23 @@ public class ProductListActivity extends AppCompatActivity {
         float density = getResources().getDisplayMetrics().density;
 
         for (Product p : filteredProducts) {
+            CardView cardView = new CardView(this);
+            CardView.LayoutParams cardParams = new CardView.LayoutParams(
+                    CardView.LayoutParams.MATCH_PARENT,
+                    CardView.LayoutParams.WRAP_CONTENT
+            );
+            cardParams.setMargins(0, 0, 0, (int) (12 * density));
+            cardView.setLayoutParams(cardParams);
+            cardView.setRadius(12 * density);
+            cardView.setCardElevation(4 * density);
+            cardView.setUseCompatPadding(true);
+            cardView.setCardBackgroundColor(getResources().getColor(R.color.bigv_white, null));
+
             LinearLayout itemLayout = new LinearLayout(this);
             LinearLayout.LayoutParams itemParams = new LinearLayout.LayoutParams(
                     LinearLayout.LayoutParams.MATCH_PARENT,
                     LinearLayout.LayoutParams.WRAP_CONTENT
             );
-            itemParams.setMargins(0, 0, 0, (int) (16 * density));
             itemLayout.setLayoutParams(itemParams);
             itemLayout.setOrientation(LinearLayout.HORIZONTAL);
             itemLayout.setGravity(Gravity.CENTER_VERTICAL);
@@ -118,7 +130,6 @@ public class ProductListActivity extends AppCompatActivity {
                     (int) (12 * density),
                     (int) (12 * density)
             );
-            itemLayout.setBackgroundColor(getResources().getColor(R.color.bigv_white, null));
 
             ImageView imgView = new ImageView(this);
             int imgSize = (int) (100 * density);
@@ -173,9 +184,10 @@ public class ProductListActivity extends AppCompatActivity {
             itemLayout.addView(imgView);
             itemLayout.addView(textLayout);
 
-            itemLayout.setOnClickListener(v -> addProductToCart(p));
+            cardView.addView(itemLayout);
+            cardView.setOnClickListener(v -> addProductToCart(p));
 
-            productListContainer.addView(itemLayout);
+            productListContainer.addView(cardView);
         }
     }
 

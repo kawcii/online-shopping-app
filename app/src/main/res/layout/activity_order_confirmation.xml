@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bigv_cream"
@@ -19,10 +18,11 @@
             android:id="@+id/txtConfirmationTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat"
             android:text="ORDER CONFIRMED"
             android:textColor="@color/bigv_brown"
-            android:textSize="24sp"
+            android:textSize="26sp"
             android:textStyle="bold" />
 
         <!-- Confirmation Message -->
@@ -30,66 +30,92 @@
             android:id="@+id/txtConfirmationMessage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/montserrat"
             android:gravity="center"
             android:text="Thank you for shopping with BIG V Supermarket!"
             android:textColor="@color/bigv_dark_text"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <!-- Order Status -->
         <TextView
             android:id="@+id/txtOrderStatus"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat"
             android:gravity="center"
             android:text="Your order has been successfully placed."
             android:textColor="@color/bigv_dark_text"
             android:textSize="16sp" />
 
-        <!-- Order Summary -->
-        <TextView
-            android:id="@+id/txtConfirmationSummaryTitle"
+        <!-- Order Summary Card -->
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:text="ORDER SUMMARY"
-            android:textColor="@color/bigv_brown"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:layout_marginTop="24dp"
+            app:cardBackgroundColor="@color/bigv_white"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true">
 
-        <TextView
-            android:id="@+id/txtConfirmationOrderSummary"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:background="@color/bigv_white"
-            android:padding="16dp"
-            android:text="Rice&#10;Quantity: 1&#10;Price: K25.00"
-            android:textColor="@color/bigv_dark_text"
-            android:textSize="16sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/txtConfirmationSummaryTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="ORDER SUMMARY"
+                    android:textColor="@color/bigv_brown"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtConfirmationOrderSummary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Rice&#10;Quantity: 1&#10;Price: K25.00"
+                    android:textColor="@color/bigv_dark_text"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
 
         <!-- Total -->
         <TextView
             android:id="@+id/txtConfirmationTotal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/montserrat"
             android:gravity="center"
             android:text="TOTAL: K25.00"
             android:textColor="@color/bigv_brown"
-            android:textSize="20sp"
+            android:textSize="22sp"
             android:textStyle="bold" />
 
         <!-- Back to Home -->
         <Button
             android:id="@+id/btnBackToHome"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="32dp"
             android:backgroundTint="@color/bigv_yellow"
+            android:fontFamily="@font/montserrat"
+            app:cornerRadius="8dp"
             android:text="BACK TO HOME"
-            android:textColor="@color/bigv_dark_text"
+            android:textColor="@color/bigv_brown"
+            android:textSize="16sp"
             android:textStyle="bold" />
 
     </LinearLayout>
