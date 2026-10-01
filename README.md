@@ -252,52 +252,52 @@ If the newly cloned project builds and runs correctly, the repository is ready f
 
 ### Splash Screen
 
-![Splash Screen](Screenshots/readme_screenshorts/splash_screen.png)
+<img src="Screenshots/readme_screenshorts/splash_screen.png" alt="Splash Screen" width="250">
 
 ### Welcome Screen ("Welcome to BIG V!" + Enter Shop)
 
-![Welcome Screen ("Welcome to BIG V!" + Enter Shop)](Screenshots/readme_screenshorts/welcome_screen.png)
+<img src="Screenshots/readme_screenshorts/welcome_screen.png" alt="Welcome Screen (&quot;Welcome to BIG V!&quot; + Enter Shop)" width="250">
 
 ### Home Screen (View Products / Categories / Shopping Cart buttons)
 
-![Home Screen (View Products / Categories / Shopping Cart buttons)](Screenshots/readme_screenshorts/home_screen.png)
+<img src="Screenshots/readme_screenshorts/home_screen.png" alt="Home Screen (View Products / Categories / Shopping Cart buttons)" width="250">
 
 ### Categories Screen (Shop by Category)
 
-![Categories Screen (Shop by Category)](Screenshots/readme_screenshorts/category_screen.png)
+<img src="Screenshots/readme_screenshorts/category_screen.png" alt="Categories Screen (Shop by Category)" width="250">
 
 ### Product List — All Products ("OUR PRODUCTS")
 
-![Product List — All Products ("OUR PRODUCTS")](Screenshots/readme_screenshorts/products_list.png)
+<img src="Screenshots/readme_screenshorts/products_list.png" alt="Product List — All Products (&quot;OUR PRODUCTS&quot;)" width="250">
 
 ### Product List — Grocery (filtered)
 
-![Product List — Grocery (filtered)](Screenshots/readme_screenshorts/grocery_gategory.png)
+<img src="Screenshots/readme_screenshorts/grocery_gategory.png" alt="Product List — Grocery (filtered)" width="250">
 
 ### Product List — Electronics (filtered)
 
-![Product List — Electronics (filtered)](Screenshots/readme_screenshorts/electronic_category.png)
+<img src="Screenshots/readme_screenshorts/electronic_category.png" alt="Product List — Electronics (filtered)" width="250">
 
 ### Product List — Apparel & Footwear (filtered)
 
-![Product List — Apparel & Footwear (filtered)](Screenshots/readme_screenshorts/clothing_category.png)
+<img src="Screenshots/readme_screenshorts/clothing_category.png" alt="Product List — Apparel &amp; Footwear (filtered)" width="250">
 
 ### Product List — Household (filtered)
 
-![Product List — Household (filtered)](Screenshots/readme_screenshorts/household_category.png)
+<img src="Screenshots/readme_screenshorts/household_category.png" alt="Product List — Household (filtered)" width="250">
 
 ### Shopping Cart — empty
 
-![Shopping Cart — empty](Screenshots/readme_screenshorts/shopping_cart.png)
+<img src="Screenshots/readme_screenshorts/shopping_cart.png" alt="Shopping Cart — empty" width="250">
 
 ### Shopping Cart — with items
 
-![Shopping Cart — with items](Screenshots/readme_screenshorts/shopping_cart_screen.png)
+<img src="Screenshots/readme_screenshorts/shopping_cart_screen.png" alt="Shopping Cart — with items" width="250">
 
 ### Checkout
 
-![Checkout](Screenshots/readme_screenshorts/checkout_screen.png)
+<img src="Screenshots/readme_screenshorts/checkout_screen.png" alt="Checkout" width="250">
 
 ### Order Confirmation
 
-![Order Confirmation](Screenshots/readme_screenshorts/order_confirmed.png)
+<img src="Screenshots/readme_screenshorts/order_confirmed.png" alt="Order Confirmation" width="250">
